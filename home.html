@@ -18,24 +18,24 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!--navigation bar-->
   <nav class="navbar navbar-expand-md">
     <div class="container-fluid d-flex align-items-end flex-column">
-    
-
-      <button class="btn get-in-touch btn-sm d-flex justify-content-end ml-4 mb-4 mt-3" type="button" onclick="getInTouch">Get in touch</button>
-
+     <!-- <div class="navbar-brand"><img src="./images/Cielo logo.png"></div>-->
+      <button class="btn get-in-touch btn-sm d-flex justify-content-end ml-4 mb-4 mt-3" data-toggle="modal"
+        data-target="#exampleModal" type="button">Get in touch
+      </button>
       <div class="collapse-navbar" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link mb-0 pb-0 mr-2" href="#">Home</a>
+            <a class="nav-link mb-0 pb-0 mr-2" href="./home.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mb-0 pb-0 mr-2" href="#">About us</a>
+            <a class="nav-link mb-0 pb-0 mr-2" href="./aboutus.html">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mb-0 pb-0 mr-2" href="#">Our approach</a>
@@ -48,30 +48,97 @@
     </div>
     </div>
   </nav>
-  <div class="container-fluid" >
-    <h1 class="row justify-content-md-center pt-5 mt-5 home-Title">Commited to Startup Thriving™</h1>
+  <div class="container-fluid">
+    <h1 class="row justify-content-md-center pt-5 mt-3">Startup Cielo™</h1>
+    <h2 class="text-center mt-4 mb-5">Commited to Startup Thriving™</h2>
   </div>
-  <div class="container">
+  <div class="container  mt-5">
     <div class="row">
-       <div class="col">Startup Cielo™ is a one-year comprehensive blended incubator for startups 
-         in pre-seed and seed stages of growth with risk-takers between 13 to 65+ years old. 
-         We combine hands-on experimentation with executive/team coaching and academic curriculum 
-         to help our participants bring their idea to life. </div>
-         <div class="col"><img src=""></div>
-         <div class="col">Our incubator utilizes a proprietary scientific framework as a backdrop
-            for the method, the length, the depth, and the intensity of the programs, and is driven
-             forward by the unique ability of our coaches and mentors to connect with the participants
-              and their startups on a truly individual basis.</div>
+      <div class="col-5 text-center home-text mt-5">Startup Cielo™ is a one-year comprehensive blended incubator for startups
+        in pre-seed and seed stages of growth with risk-takers between 13 to 65+ years old.
+        We combine hands-on experimentation with executive/team coaching and academic curriculum
+        to help our participants bring their idea to life.<br>
+        <div class="mt-5">Our incubator utilizes a proprietary scientific framework as a backdrop for the method,
+          the length, the depth, and the intensity of the programs, and is driven forward by the
+          unique ability of our coaches and mentors to connect with the participants and their
+          startups on a truly individual basis.</div>
+      </div>
+      <div class="home-image"><img src="./images/home-page.webp"></div>
     </div>
   </div>
+  <!--modal
+  <div class="model fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title form-title font-weight-bold mt-3 mb-2" id="exampleModalLabel">New message</div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+      <div class="">We can’t wait to hear from you</div>
+      <div class="form-sub-title mb-1">Please fill out our online form below. One of our team members will be in touch
+        within 24 business hours.
+      </div>
+      <div class="mb-4">Thank you!</div>
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control mb-3 ml-3" id="InputName" placeholder="Name">
+        </div>
+        <div class="col">
+          <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+        </div>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control mb-3" id="InputSubject" placeholder="Subject">
+      </div>
+      <input type="text" class="form-control mb-2 ml-3" id="InputMessage" placeholder="Message">
+      <button type="submit" class="btn Send-btn">Send</button></div>
+    </form>
+        </div>
+      </div>
+    </div>
+    
+  </div>-->
 
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">We can’t wait to hear from you</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  
+</footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
-  <script src="index.js"></script>  
+  <script src="index.js"></script>
 </body>
 
 </html>
