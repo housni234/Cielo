@@ -54,10 +54,11 @@
     <nav class="navbar bg-light pb-3 d-flex justify-content-center sticky-top">
         <a class="btn mb-0 mt-5 mr-2" href="#Entrepreneurs">Startup Cielo for Entrepreneurs</a>
         <a class="btn mb-0 mt-5 mr-2" href="#Intrapreneurs">Startup Cielo for Intrapreneurs</a>
-        <a class="btn mb-0 mt-5 mr-2 " href="#">Startup Cielo for Highschoolers</a>
-        <a class="btn mb-0 mt-5" href="#">Startup Cielo for Tech Students</a>
+        <a class="btn mb-0 mt-5 mr-2 " href="#Highschoolers">Startup Cielo for Highschoolers</a>
+        <a class="btn mb-0 mt-5" href="#Tech-Students">Startup Cielo for Tech Students</a>
     </nav>
-    <div class="container programs-section" id="Entrepreneurs">
+    <div id="Entrepreneurs"></div>
+    <div class="container programs-section" >
         <hr class="hr-top">
         <div class="row justify-content-md-center">
             <img class="programs-img col-3 mr-3" src="./images/intrepeneur1.png">
@@ -80,8 +81,8 @@
         </div>
         <hr class="hr-bottom mt-5">
     </div>
-
-    <div class="container programs-section" id="Intrapreneurs">
+<div id="Intrapreneurs"></div>
+    <div class="container programs-section" >
         <hr class="hr-top">
         <div class="row justify-content-md-center">
             <img class="programs-img col-3 mr-5" src="./images/intrapreneur.png">
@@ -101,7 +102,7 @@
         </div>
         <hr class="hr-bottom mt-5">
     </div>
-
+<div id="Highschoolers"></div>
     <div class="container programs-section">
         <hr class="hr-top">
         <div class="row justify-content-md-center">
@@ -121,7 +122,7 @@
         </div>
         <hr class="hr-bottom mt-5">
     </div>
-
+<div id="Tech-Students"></div>
     <div class="container programs-section">
         <hr class="hr-top">
         <div class="row justify-content-md-center">
@@ -140,6 +141,47 @@
         </div>
         <hr class="hr-bottom mt-5">
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modaltitle mx-auto font-weight-bold" id="exampleModalLabel">We can’t wait to hear from you</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="form-sub-title m-3">Please fill out our online form below. One of our team members will be in touch
+          within 24 business hours.
+        </div>
+        <h6 class=" text-center">Thank you!</h6>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control input-1 mb-3 ml-3" id="InputName" placeholder="Name">
+              </div>
+              <div class="col">
+                <input type="email" class="form-control input-1" id="InputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control input-1 mb-3" id="InputSubject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="message-text" placeholder="Message"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-close-send" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-close-send">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <footer>
 
     </footer>

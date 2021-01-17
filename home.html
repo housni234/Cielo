@@ -23,7 +23,7 @@
 
 <body>
   <!--navigation bar-->
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md sticky-top">
     <div class="navbar-brand"><img src="./images/Cielo-logo2.png"></div>
     <div class="container-fluid d-flex align-items-end flex-column">
       <button class="btn get-in-touch btn-sm d-flex justify-content-end ml-4 mb-4 mt-3" data-toggle="modal"
@@ -51,22 +51,24 @@
     </div>
     </div>
   </nav>
+
   <div class="container-fluid">
     <h1 class="row justify-content-md-center pt-5 mt-3">Startup Cielo™</h1>
     <h2 class="text-center mt-4 mb-5">Commited to Startup Thriving™</h2>
   </div>
-  <div class="container  mt-5">
+  <div class="container con mt-5" style="background-color: rgb(236, 236, 236); box-shadow: 0px 0px 5px 5px rgb(138, 138, 138)">
     <div class="row">
-      <div class="col-5 text-center home-text mt-5">Startup Cielo™ is a one-year comprehensive blended incubator for startups
+      <div class="col-sm-5 text-center home-text mt-5">Startup Cielo™ is a one-year comprehensive blended incubator for startups
         in pre-seed and seed stages of growth with risk-takers between 13 to 65+ years old.
         We combine hands-on experimentation with executive/team coaching and academic curriculum
-        to help our participants bring their idea to life.<br>
+        to help our participants bring their idea to life.
         <div class="mt-5">Our incubator utilizes a proprietary scientific framework as a backdrop for the method,
           the length, the depth, and the intensity of the programs, and is driven forward by the
           unique ability of our coaches and mentors to connect with the participants and their
-          startups on a truly individual basis.</div>
+          startups on a truly individual basis.
+        </div>
       </div>
-      <div class="home-image"><img src="./images/home-page.webp"></div>
+      <div class="home-image "><img src="./images/home-page.webp"></div>
     </div>
   </div>
   <!--modal
@@ -105,36 +107,50 @@
     
   </div>-->
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">We can’t wait to hear from you</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modaltitle mx-auto font-weight-bold" id="exampleModalLabel">We can’t wait to hear from you</h5>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="form-sub-title m-3">Please fill out our online form below. One of our team members will be in touch
+          within 24 business hours.
+        </div>
+        <h6 class=" text-center">Thank you!</h6>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control input-1 mb-3 ml-3" id="InputName" placeholder="Name">
+              </div>
+              <div class="col">
+                <input type="email" class="form-control input-1" id="InputEmail" placeholder="Email">
+              </div>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control input-1 mb-3" id="InputSubject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="5" id="message-text" placeholder="Message"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-close-send" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-close-send">Send message</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<footer>
-  
-</footer>
+  <footer>
+
+  </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
